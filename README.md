@@ -40,7 +40,7 @@ XGBRegressor(const QMap<QString, QString>& params, QObject* parent = nullptr);
 ```cpp
 XGBClassifier(const QMap<QString, QString>& params, QObject* parent = nullptr);
 ```
-- `params` — карта параметров XGBoost (например, `num_boost_round`, `max_depth`, `eta`, `lambda`)
+- `params` — карта параметров XGBoost (например, `n_iter`, `max_depth`, `eta`, `lambda`)
 - `parent` — родительский QObject
 
 **Основные методы:**
@@ -61,7 +61,7 @@ XGBClassifier(const QMap<QString, QString>& params, QObject* parent = nullptr);
 
 // --- Регрессия ---
 QMap<QString, QString> params;
-params["num_boost_round"] = "20";
+params["n_iter"] = "20";
 params["max_depth"] = "4";
 params["eta"] = "0.1";
 params["lambda"] = "1";
